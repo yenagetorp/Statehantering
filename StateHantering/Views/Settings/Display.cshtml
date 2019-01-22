@@ -1,0 +1,19 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using StateHantering.Models.ViewModels
+@model SettingsDisplayVM
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Display</title>
+</head>
+<body >
+    <h1 class="jumbotron">State handling</h1>
+
+    <p>@Model.Temp</p>
+    <p>Company Name : @Model.CompanyName</p>
+    <p>Support E-mail: @Model.Email</p>
+</body>
+</html>

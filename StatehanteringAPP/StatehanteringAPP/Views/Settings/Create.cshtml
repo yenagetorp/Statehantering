@@ -1,0 +1,27 @@
+﻿
+@using StatehanteringAPP.Models.ViewModels
+@model SettingsCreateVM
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" />
+
+    <title>Create</title>
+</head>
+<body>
+
+    @*//Client-side state: forms skickas av client vid POST-anrop.*@
+    <form asp-controller="" asp-action="">
+        <label asp-for="Email">Support E-mail:</label>
+        <input asp-for="Email" />
+        <label asp-for="CompanyName">Company name:</label>
+        <input asp-for="CompanyName" />
+        <input type="submit" value="Submit" />
+    </form>
+
+</body>
+</html>

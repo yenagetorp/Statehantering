@@ -1,0 +1,27 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using StateHantering.Models.ViewModels
+@model SettingsCreateVM
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <h1 class="jumbotron">State handling</h1>
+    <form asp-controller="Settings" asp-action="Create">
+        <label asp-for="CompanyName">Company Name</label>
+        <input asp-for="CompanyName" type="text" name="CompanyName" required />
+        <span asp-validation-for="CompanyName"></span>
+        <br />
+        <label asp-for="Email">E-mail</label>
+        <input asp-for="Email" type="text" name="Email" required />
+        <span asp-validation-for="Email"></span>
+        <br />
+        <input type="submit" value="Save" />
+    </form>
+</body>
+</html>
